@@ -1,11 +1,13 @@
-#!/usr/bin/env python
+## ! DO NOT MANUALLY INVOKE THIS setup.py, USE CATKIN INSTEAD
 
-from setuptools import setup
+from distutils.core import setup
 from catkin_pkg.python_setup import generate_distutils_setup
 
+# fetch values from package.xml
 setup_args = generate_distutils_setup(
-    packages=[''],
-    package_dir={'': 'scripts'}
+    packages=['ros_cython_example'],
+    package_dir={'': 'src'},
+    requires=['std_msgs', 'rospy']
 )
 
 setup(**setup_args)
