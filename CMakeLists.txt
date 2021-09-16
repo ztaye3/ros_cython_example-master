@@ -190,6 +190,15 @@ add_subdirectory(src/cython)
 #   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
  )
 
+ install(
+    DIRECTORY srv
+    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+# FILES
+#   # myfile1
+#   # myfile2
+#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+ )
+
 #############
 ## Testing ##
 #############
