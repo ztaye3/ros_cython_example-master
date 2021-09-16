@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import rospy
 from ros_cython_example import *
-from ros_cython_example.srv import *
+# from ros_cython_example.srv import *
 
 def handle_add_two_ints(req):
     return AddTwoIntsResponse(add_two_ints(req.a, req.b))
